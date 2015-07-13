@@ -1,0 +1,9 @@
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/github_rsa
+
+Host github-eatingNumbers
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa

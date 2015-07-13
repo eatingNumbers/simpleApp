@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3058181B52F1470045AF5A /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3058171B52F1470045AF5A /* FactBook.m */; };
 		3CDC64701AA40E7800410535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC646F1AA40E7800410535 /* main.m */; };
 		3CDC64731AA40E7800410535 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC64721AA40E7800410535 /* AppDelegate.m */; };
 		3CDC64761AA40E7800410535 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC64751AA40E7800410535 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C3058161B52F1470045AF5A /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
+		3C3058171B52F1470045AF5A /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
 		3CDC646A1AA40E7800410535 /* FunFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDC646E1AA40E7800410535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CDC646F1AA40E7800410535 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				3CDC64721AA40E7800410535 /* AppDelegate.m */,
 				3CDC64741AA40E7800410535 /* ViewController.h */,
 				3CDC64751AA40E7800410535 /* ViewController.m */,
+				3C3058161B52F1470045AF5A /* FactBook.h */,
+				3C3058171B52F1470045AF5A /* FactBook.m */,
 				3CDC64771AA40E7800410535 /* Main.storyboard */,
 				3CDC647A1AA40E7800410535 /* Images.xcassets */,
 				3CDC647C1AA40E7800410535 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				3CDC64761AA40E7800410535 /* ViewController.m in Sources */,
 				3CDC64731AA40E7800410535 /* AppDelegate.m in Sources */,
+				3C3058181B52F1470045AF5A /* FactBook.m in Sources */,
 				3CDC64701AA40E7800410535 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +349,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = FunFact/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +361,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = FunFact/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +422,7 @@
 				3CDC648F1AA40E7800410535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CDC64901AA40E7800410535 /* Build configuration list for PBXNativeTarget "FunFactTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				3CDC64921AA40E7800410535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

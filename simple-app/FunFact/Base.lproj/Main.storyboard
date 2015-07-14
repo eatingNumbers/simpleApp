@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asM-fm-djV">
-                                <rect key="frame" x="48" y="448" width="225" height="61"/>
+                                <rect key="frame" x="47" y="448" width="225" height="61"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="lTv-AB-xwO"/>
@@ -32,15 +31,6 @@
                                     <action selector="showFunFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zw9-ho-JAa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An interesting fact goes here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adD-IH-5GT">
-                                <rect key="frame" x="48" y="190" width="225" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="225" id="YVH-cS-IGK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p23-qC-2Im">
                                 <rect key="frame" x="52" y="60" width="116" height="22"/>
                                 <constraints>
@@ -51,18 +41,23 @@
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An interesting fact goes here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adD-IH-5GT">
+                                <rect key="frame" x="48" y="190" width="225" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="asM-fm-djV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="32" id="5FG-ni-7Ig"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="adD-IH-5GT" secondAttribute="trailing" constant="31" id="CuY-NN-Bgz"/>
+                            <constraint firstItem="asM-fm-djV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="31" id="5FG-ni-7Ig"/>
+                            <constraint firstItem="adD-IH-5GT" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="190" id="BMO-7P-CSf"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="asM-fm-djV" secondAttribute="bottom" constant="59" id="EVD-w9-kuO"/>
                             <constraint firstItem="p23-qC-2Im" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="L8X-T0-zae"/>
-                            <constraint firstAttribute="centerX" secondItem="adD-IH-5GT" secondAttribute="centerX" id="Wi8-7v-RGy"/>
-                            <constraint firstAttribute="centerY" secondItem="adD-IH-5GT" secondAttribute="centerY" constant="71.5" id="coI-oa-ZFa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="asM-fm-djV" secondAttribute="trailing" constant="31" id="ecQ-7F-X01"/>
+                            <constraint firstItem="adD-IH-5GT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="32" id="eDD-Ai-thz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="asM-fm-djV" secondAttribute="trailing" constant="32" id="ecQ-7F-X01"/>
                             <constraint firstItem="p23-qC-2Im" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="fN8-pD-tMS"/>
-                            <constraint firstItem="adD-IH-5GT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="32" id="rHj-18-bFo"/>
+                            <constraint firstItem="adD-IH-5GT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rev-kH-ek7"/>
                         </constraints>
                     </view>
                     <connections>

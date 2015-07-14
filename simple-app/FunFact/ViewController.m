@@ -20,7 +20,12 @@
     [super viewDidLoad];
 
     self.factBook = [[FactBook alloc] init];
-
+    self.colorWheel = [[ColorWheel alloc] init];
+    
+    UIColor *randomColor = [self.colorWheel randomColor];
+    
+    self.view.backgroundColor = randomColor;
+    self.FunFactButton.tintColor = randomColor;
     self.funFactLabel.text = [self.factBook randomFact];
 }
 
@@ -30,8 +35,10 @@
 }
 
 - (IBAction)showFunFact {
+    UIColor *randomColor = [self.colorWheel randomColor];
     
-    
+    self.view.backgroundColor = randomColor;
+    self.FunFactButton.tintColor = randomColor;
     self.funFactLabel.text = [self.factBook randomFact];
 
 }

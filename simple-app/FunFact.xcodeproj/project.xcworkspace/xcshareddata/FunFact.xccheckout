@@ -14,11 +14,11 @@
 		<string>github.com:eatingNumbers/simpleapp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FunFact.xcodeproj</string>
+	<string>simple-app/FunFact.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5319CCD6A52C9B155882F4FC09C66A09D668B760</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:eatingNumbers/simpleapp.git</string>
